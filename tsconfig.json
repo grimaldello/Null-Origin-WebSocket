@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "target": "ES2015" /* Build to ES2015 */,
+      "module": "ES2015" /* using ES2015 modules */,
+      "declaration": true /* Generates corresponding'.d.ts' files. */,
+      "declarationDir": "./lib/typings/" /* build '.d.ts' files to ./dist/typeings */,
+      "outDir": "./lib/esm/" /* build to ./dist/esm/ */
+    },
+    "files": ["./src/index.ts"],
+    "include": ["./src/**/*.ts"]
+  }

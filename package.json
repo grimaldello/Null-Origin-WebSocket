@@ -1,0 +1,31 @@
+{
+  "name": "null-origin-websocket",
+  "version": "1.0.0",
+  "description": "A tiny websocket library that permits to create WebSocket with null origin header",
+  "main": "./lib/umd/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/typings/index.d.ts",
+  "scripts": {
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve --host 0.0.0.0 --config webpack.config.dev.js",
+    "build:lib": "tsc && webpack --config webpack.config.lib.js"
+  },
+  "keywords": [
+    "WebSocket",
+    "null",
+    "origin"
+  ],
+  "author": "grimaldello",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.2",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.1",
+    "ws": "^8.13.0"
+  }
+}
