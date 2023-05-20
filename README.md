@@ -11,7 +11,7 @@ The purpose of this library is to permit the creation of a **WebSocket client** 
 
 # Brief theory behind the functioning of the library
 
-The library, under the hood, uses an **HTML iframe** which content is a **Javascript WebSocket Base64 encoded** .
+The library, under the hood, uses an **HTML iframe** which content is a **Javascript WebSocket Base64 encoded**.
 
 **The trick of using Base64 encoding for the WebSocket, is the key to get the header Origin equals to null.**
 
