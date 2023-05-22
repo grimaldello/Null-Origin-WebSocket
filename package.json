@@ -1,6 +1,6 @@
 {
   "name": "null-origin-websocket",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tiny websocket library that permits to create WebSocket with null origin header",
   "main": "./lib/umd/index.js",
   "module": "./lib/esm/index.js",
@@ -17,6 +17,10 @@
     "null",
     "origin"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grimaldello/Null-Origin-WebSocket"
+  },
   "author": "grimaldello",
   "license": "ISC",
   "devDependencies": {
@@ -27,5 +31,9 @@
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.13.1",
     "ws": "^8.13.0"
-  }
+  },
+  "files": [
+    "lib/",
+    "media/"
+  ]
 }

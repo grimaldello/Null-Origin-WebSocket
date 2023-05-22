@@ -6,8 +6,14 @@ The purpose of this library is to permit the creation of a **WebSocket client** 
 
 # TODO and improvements
 - documentation
-- make npm package
+- ~~make npm package~~
 - typescript example
+
+# Usage using npm
+
+```
+npm install null-origin-websocket
+```
 
 # Brief theory behind the functioning of the library
 
