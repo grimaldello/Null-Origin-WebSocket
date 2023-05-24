@@ -85,7 +85,43 @@ npm run build:lib
 
 A `lib` folder will be created with the result of the build
 
-# Library usage example (Javascript)
+# Library usage through npm package
+
+If the library is installed through the npm package command, just import it from `node_modules`.
+
+Then follow **Local build library usage example** (changing the path accordingly) for the usage.
+
+# Local build library usage example Typescript
+
+Here the steps to use a build of the library in a Typescript project
+
+- make a build of the library (see **Build the library** section)
+
+- copy the resulting `lib` folder in the folder/project where you need to use the **Null Origin WebSocket** client
+
+- `import { ... } from "null-origin-websocket";` in typescript file
+
+- do what you need
+
+Here an example of `SimpleNullOriginWebSocket` usage in typescript file:
+```typescript
+import { SimpleNullOriginWebSocketClient } from "null-origin-websocket";
+
+const client: SimpleNullOriginWebSocketClient = new SimpleNullOriginWebSocketClient("ws://127.0.0.1:12345");
+
+await client.establishWebSocketConnection();
+
+```
+Here a definition of a custom Null Origin WebSocket client (called `MyNullOriginWebSocketClient`) extending the `AbstractNullOriginWebSocketClient`:
+```typescript
+
+import { AbstractNullOriginWebSocketClient } from "null-origin-websocket";
+
+class MyNullOriginWebSocketClient extends AbstractNullOriginWebSocketClient {
+    // Implement all abstract methods and logics here
+}
+```
+# Local build library usage example Javascript
 
 Here the steps to use a build of the library in HTML file:
 
